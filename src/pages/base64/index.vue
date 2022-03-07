@@ -91,12 +91,16 @@ textarea {
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import  {love} from "../api/love";
 
 export default defineComponent({
     setup() {
 
     },
-    data() {
+  mounted() {
+      love()
+  },
+  data() {
         return {
             leftText: "",
             rightText: ""
